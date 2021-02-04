@@ -112,31 +112,45 @@ a {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-
   background-color: var(--basic-light-blue);
 }
 
 /* Top Header*/
 
-.main-logo {
-  width: 220px;
-  float: left;
+.top-header {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-white);
+  min-width: 75%;
+}
 
+.main-logo {
+  display: inline-block;
+  line-height: 0;
+  margin: 0;
   background-color: var(--basic-red);
-  background-image: url(../img/main-logo.svg);
-  background-repeat: no-repeat;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.main-logo img {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  padding-left: 57px;
+  padding-right: 57px;
 }
 
 .main-logo:active {
   background-color: var(--basic-dark-red);
 }
 
+.search {
+  display: inline-block;
+}
+
 .search input {
   background-color: var(--basic-dark-blue);
   border: none;
-  float: left;
 }
+
 
 .search input:focus {
   background-color: var(--basic-white);
@@ -153,26 +167,23 @@ a {
   color: rgba(var(--basic-white-rgb), 0.5)
 }
 
-.top-header {
-  background-color: var(--basic-dark-blue);
-  color: var(--basic-white);
-  text-decoration: none;
+.basket,
+.bookmarks {
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.basket {
-  padding-top: 9px;
-  padding-bottom: 9px;
-
 }
 
 .basket-full {
   background-color: var(--basic-red);
 }
 
+.order-details {
+  display: inline-block;
+}
+
 .order-details a {
   color: var(--basic-white);
+  float: left;
 }
 
 
@@ -212,7 +223,6 @@ a {
   font-weight: 400;
   line-height: 23px;
   color: var(--basic-red);
-  font-size: 16px;
 }
 
 .title p {
@@ -222,7 +232,6 @@ a {
   font-weight: 400;
   line-height: 23px;
   color: var(--basic-red);
-  font-size: 16px;
 }
 
 .mid-header {
@@ -241,6 +250,12 @@ a {
 .contacts p {
   font-size: 14px;
   color: var(--basic-blue);
+}
+
+.account-field a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
 }
 
 /* Bottom Header */
