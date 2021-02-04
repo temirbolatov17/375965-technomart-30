@@ -108,6 +108,7 @@ a {
 /* Header */
 
 .main-header {
+  margin: 0 auto;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -121,6 +122,8 @@ a {
   background-color: var(--basic-dark-blue);
   color: var(--basic-white);
   min-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-logo {
@@ -132,8 +135,8 @@ a {
 }
 
 .main-logo img {
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 12.7px;
+  padding-bottom: 12.7px;
   padding-left: 57px;
   padding-right: 57px;
 }
@@ -235,6 +238,8 @@ a {
 }
 
 .mid-header {
+  margin: 0 auto;
+
   width: 75%;
 }
 
@@ -258,9 +263,18 @@ a {
   line-height: 21px;
 }
 
+.account-details a {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-blue);
+}
+
 /* Bottom Header */
 
 .bottom-header {
+  margin: 0 auto;
+
   max-width: 75%;
   text-align: center;
   background: var(--basic-blue);
@@ -294,6 +308,7 @@ a {
 .container {
   background-color: var(--basic-white);
   width: 75%;
+  margin: 0 auto;
 }
 
 /* Preview */
@@ -407,7 +422,6 @@ a {
 .popular-goods {
   height: auto;
 }
-
 
 .popular-title {
   font-weight: 400;
@@ -629,6 +643,19 @@ map {
 
 /* Footer */
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .footer {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
@@ -639,6 +666,7 @@ map {
 
 .footer-top {
   background-color: var(--basic-blue);
+  padding-bottom: 54px;
 }
 
 .footer-logo {
@@ -652,11 +680,9 @@ map {
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-
 .footer-contacts {
   color: var(--basic-light-gray);
 }
-
 
 .footer-contacts a {
   color: var(--basic-light-gray);
@@ -681,7 +707,6 @@ map {
 
 .product-groups-list {
   list-style: none;
-
 }
 
 .product-groups-list a {
@@ -701,6 +726,8 @@ map {
 .footer-bottom {
   font-size: 16px;
   line-height: 18px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   color: var(--basic-white);
   background-color: var(--basic-dark-blue);
@@ -732,6 +759,7 @@ map {
 }
 
 .breadcrumbs-item a {
+  font-size: 13px;
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -763,7 +791,7 @@ map {
 /* Filter */
 
 .sort-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   background-color: var(--basic-beige-darknes);
   text-transform: uppercase;
@@ -784,7 +812,6 @@ map {
 
 .sort-active a {
   color: var(--basic-red);
-
 }
 
 .quiet a {
@@ -821,6 +848,7 @@ map {
 
 .show-btn {
   padding: 10px 79px 10px 79px;
+  margin-top: 35px; /* Не понятно какой маргин */
 
   font-family: 'PR Sans', 'Arial' sans-serif;
   text-transform: uppercase;
@@ -829,10 +857,24 @@ map {
   border: 1px solid #E5E5E5;
 }
 
+/* Brands filter*/
+
+.choice-brand-list,
+.power-list {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: normal;
+  line-height: 23px;
+}
+
 /* Pages field */
 
 .page-list {
   display: flex;
+  margin-top: 48px;
+  margin-bottom: 59px;
 
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
@@ -869,7 +911,6 @@ map {
 /* Article */
 
 .article {
-  position: absolute;
   background-color: var(--basic-light-blue);
   width: 100%;
 }
