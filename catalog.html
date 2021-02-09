@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -12,29 +12,33 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="page-catalog">
     <header class="main-header">
       <div class="top-header">
-        <div class="main-logo">
-          <a href="index.html">
-            <img src="img/main-logo.svg" alt="Technomart logo">
-          </a>
-        </div>
-        <div class="search">
-          <form method="GET" action="#">
-            <label>
-              <input type="search" placeholder="Поиск:" id="search">
-            </label>
-          </form>
-        </div>
-        <div class="order-details">
-          <a class="bookmarks" href="#">Закладки: 0</a>
-          <a class="basket basket-full" href="#">Корзина: 10</a>
-          <a class="order-confirm" href="#">Оформить заказ</a>
+        <div class="top-header-area container">
+          <div class="main-logo">
+            <a href="index.html">
+              <img src="img/main-logo.svg" alt="Technomart logo">
+            </a>
+          </div>
+          <div class="user-bar">
+            <div class="search-form">
+              <form method="GET" action="#">
+                <label>
+                  <input type="search" placeholder="Поиск:" id="search">
+                </label>
+              </form>
+            </div>
+            <div class="order-details">
+              <a class="bookmarks" href="#">Закладки: 0</a>
+              <a class="basket basket-full" href="#">Корзина: 10</a>
+              <a class="order-confirm" href="#">Оформить заказ</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="mid-header">
+      <div class="mid-header container">
         <div class="title">
           <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </div>
@@ -55,7 +59,7 @@
         </div>
       </div>
 
-      <nav class="bottom-header">
+      <nav class="bottom-header container">
         <ul class="site-navigation">
           <li class="navigation-item">
             <a href="index.html">Главная</a>
@@ -82,10 +86,10 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-catalog">
 
       <h1 class="visually-hidden">Каталог</h1>
-      <div class="breadcrumbs">
+      <div class="breadcrumbs container">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a href="index.html">Домой</a>
@@ -102,11 +106,11 @@
         </ul>
       </div>
 
-      <div class="subtitle">
+      <div class="subtitle container">
         <h2>Перфораторы</h2>
       </div>
 
-      <section class="goods-area">
+      <section class="goods-area container">
 
         <div class="sort-title">
           <p>Фильтр:</p>
@@ -133,7 +137,7 @@
           </ul>
         </div>
 
-        <form method="GET" action="#">
+        <form class="main-filter" method="GET" action="#">
           <fieldset class="choice-price">
             <legend>Цена</legend>
             <input type="range" step="1" min="0" max="35000" id="price"
@@ -182,7 +186,7 @@
         </form>
       </section>
 
-      <section>
+      <section class="goods-choice-area container">
         <ul class="product-list">
           <li class="product-card">
             <a href="blank.html">Перфоратор BOSCH BFG 6000</a>
@@ -292,85 +296,91 @@
       </section>
 
       <section class="article">
-        <h2>Пара слов о перфораторах</h2>
-        <p>
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
-Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
-В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+        <div class="article-item container">
+          <h2>Пара слов о перфораторах</h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+  Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
+  В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <section class="footer-top">
-        <div class="footer-logo">
-          <a href="index.html"></a>
-        </div>
-        <div class="footer-contacts">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78125550555">+7(812) 555-05-55</a>
-        </div>
-        <ul class="footer-navigation">
-          <li class="footer-navigation-item">
-            <a href="index.html">Компания</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a href="#">Новости</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-
-        <ul class="product-groups-list">
-          <li class="product-groups-item">
-            <a href="#">Материалы</a>
-          </li>
-          <li class="product-groups-item">
-            <a href="#">Техника</a>
-          </li>
-          <li class="product-groups-item">
-            <a href="#">Инструмент</a>
-          </li>
-          <li class="product-groups-item">
-            <a href="#">Спецпредложения</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-bottom">
-        <div class="copyright">
-          <h2 class="visually-hidden">Техномарт</h2>
-          <p>© 2010–2019 Компания «Техномарт»<br>
-          Все права защищены</p>
-        </div>
-        <div class="socials">
-          <ul class="social-list">
-            <li class="social-button">
-              <a href="#">Вконтакте</a>
+        <div class="footer-top-wrapper container">
+          <div class="footer-logo">
+            <a href="index.html"></a>
+          </div>
+          <div class="footer-contacts">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78125550555">+7(812) 555-05-55</a>
+          </div>
+          <ul class="footer-navigation">
+            <li class="footer-navigation-item">
+              <a href="index.html">Компания</a>
             </li>
-            <li class="social-button">
-              <a href="#">Фейсбук</a>
+            <li class="footer-navigation-item">
+              <a href="#">Новости</a>
             </li>
-            <li class="social-button">
-              <a href="#">Инстаграм</a>
+            <li class="footer-navigation-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-navigation-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="product-groups-list">
+            <li class="product-groups-item">
+              <a href="#">Материалы</a>
+            </li>
+            <li class="product-groups-item">
+              <a href="#">Техника</a>
+            </li>
+            <li class="product-groups-item">
+              <a href="#">Инструмент</a>
+            </li>
+            <li class="product-groups-item">
+              <a href="#">Спецпредложения</a>
             </li>
           </ul>
         </div>
-        <div class="communication">
-          <p>Обратная связь:
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p>
-            Разработано -
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+      </section>
+
+      <section class="footer-bottom">
+        <div class="footer-bottom-wrapper container">
+          <div class="copyright">
+            <h2 class="visually-hidden">Техномарт</h2>
+            <p>© 2010–2019 Компания «Техномарт»<br>
+            Все права защищены</p>
+          </div>
+          <div class="socials">
+            <ul class="social-list">
+              <li class="social-button">
+                <a href="#">Вконтакте</a>
+              </li>
+              <li class="social-button">
+                <a href="#">Фейсбук</a>
+              </li>
+              <li class="social-button">
+                <a href="#">Инстаграм</a>
+              </li>
+            </ul>
+          </div>
+          <div class="communication">
+            <p>Обратная связь:
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано -
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </section>
     </footer>
