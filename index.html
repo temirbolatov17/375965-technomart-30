@@ -21,32 +21,36 @@
               <img src="img/main-logo.svg" alt="Technomart logo">
             </a>
           </div>
-          <div class="user-bar">
-            <div class="search-form">
-              <form method="GET" action="#">
-                <label>
-                  <input class="search" type="search" placeholder="Поиск:" id="search">
-                </label>
-              </form>
-            </div>
-            <div class="order-details">
-              <a class="bookmarks" href="#">Закладки: 0</a>
-              <a class="basket" href="#">Корзина: 0</a>
+          <div class="search-form">
+            <form method="GET" action="#">
+              <input class="search" type="search" placeholder="Поиск:" id="search">
+              <label for="search"></label>
+            </form>
+          </div>
+          <div class="bookmarks-item">
+            <a class="bookmarks" href="#">Закладки: 0</a>
+          </div>
+          <div class="basket-item">
+            <a class="basket" href="#">Корзина: 0</a>
+          </div>
+          <div class="order-confirm-item">
               <a class="order-confirm" href="#">Оформить заказ</a>
-            </div>
           </div>
         </div>
       </div>
       <div class="mid-header container">
         <div class="title">
-          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <h1>Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
         </div>
         <div class="contacts">
           <a href="tel:+78125550555">+7(812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="account-field">
-          <a class="login-link" href="#">Войти</a>
+          <a class="login-link" href="#"><svg class="login-link-icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+            <path d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z" fill="#C5C5C5"/>
+            </svg>Войти</a>
           <a class="registration-link" href="#">Регистрация</a>
         </div>
       </div>
@@ -81,49 +85,49 @@
     <main class="main-container">
       <h2 class="visually-hidden">Категории</h2>
       <section class="preview">
-        <ul class="preview-list container">
-          <li class="preview-item mats">
+        <div class="preview-list container">
+          <div class="preview-item mats">
             <h3>Материалы</h3>
             <a class="preview-link" href="#">На любой вкус</a>
             <div class="new">new</div>
-          </li>
-          <li class="preview-item inst">
+          </div>
+          <div class="preview-item inst">
             <h3>Инструмент</h3>
             <a class="preview-link" href="#">На все случаи</a>
-          </li>
-          <li class="preview-item tech">
+          </div>
+          <div class="preview-item tech">
             <h3>Техника</h3>
             <a class="preview-link" href="#">Для стройки</a>
-          </li>
-          <li class="preview-item sale">
+          </div>
+          <article class="main-slider slider">
+            <div class="slider-item">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <img src="img/perforator.jpg" width="620" height="266" alt="Мужчина с перформатором bosch">
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </div>
+            <!-- <div class="slider-item">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <img src="img/dreli.jpg" width="620" height="266" alt="Мужчина с дрелью bosch">
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="slider-control" >
+              <button class="slider-button-back" type="button">Назад</button>
+              <button class="slider-button-next" type="button">Вперед</button>
+            </div>
+            <div class="slider-dots">
+              <button class="dot-item" type="button">1</button>
+              <button class="dot-item" type="button">2</button>
+            </div>-->
+          </article>
+          <div class="preview-item sale">
             <h3>Скидки 50%</h3>
             <a class="preview-link" href="#">На 350 товаров</a>
-          </li>
-          <li class="preview-item deliv">
+          </div>
+          <div class="preview-item deliv">
             <h3>Доставка</h3>
             <a class="preview-link" href="#">Бесплатно</a>
-          </li>
-        </ul>
-        <div class="slider container">
-          <div class="slider-item">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <img src="img/perforator.jpg" width="620" height="266" alt="Мужчина с перформатором bosch">
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slider-item">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <img src="img/dreli.jpg" width="620" height="266" alt="Мужчина с дрелью bosch">
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="slider-control" >
-            <button class="slider-button-back" type="button">Назад</button>
-            <button class="slider-button-next" type="button">Вперед</button>
-          </div>
-          <div class="slider-dots">
-            <button class="dot-item" type="button">1</button>
-            <button class="dot-item" type="button">2</button>
           </div>
         </div>
       </section>
@@ -138,7 +142,7 @@
           </div>
         </div>
         <div class="popular-goods-area">
-          <ul class="product-list">
+          <ul class="popular-product-list">
             <li class="product-card">
               <a href="blank.html">Перфоратор BOSCH BFG 9000</a>
               <img src="img/goods/bosch9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
@@ -238,7 +242,7 @@
 
       <section class="services">
         <div class="services-list container">
-          <div>
+          <div class="services-title">
             <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -260,7 +264,7 @@
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
               <img src="img/delivery.png" width="468" height="261" alt="delivery">
-            </div>
+            </div><!--
             <div class="gaurantee">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии.
@@ -272,13 +276,13 @@
               <p>Залезть в долговую яму стало проще! Крдитные консультанты придут вам на помощь.</p>
               <img src="img/credit.png" width="465" height="285" alt="credit">
               <a class="button" href="blank.html">Отправить заявку</a>
-            </div>
+            </div>-->
           </div>
         </div>
       </section>
 
       <section class="about-company container">
-        <div class="delivery-info">
+        <div class="logistic-info">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
             ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
