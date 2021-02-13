@@ -15,7 +15,6 @@
     url(../fonts/cuprumbold.woff);
   font-weight: 700;
   font-style: normal;
-
 }
 
 @font-face {
@@ -48,7 +47,7 @@
     url(../fonts/ptsansbold.woff) format('woff');
   font-weight: 700;
   font-style: normal;
-  }
+}
 
 /* Variables */
 
@@ -103,8 +102,8 @@
   font-size: 18px;
   line-height: 24px;
   list-style: none;
-  /*
-  min-height: 100%;*/
+
+  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -120,7 +119,6 @@
   font-size: 18px;
   line-height: 24px;
   list-style: none;
-
 
   min-height: 100%;
   display: grid;
@@ -148,7 +146,6 @@ a {
   background-color: var(--basic-dark-blue);
   color: var(--basic-white);
   text-align: center;
-
 }
 
 .top-header-area {
@@ -270,7 +267,6 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 158px;
   align-items: center;
-
 }
 
 .title h1 {
@@ -295,7 +291,6 @@ a {
 
 .contacts {
   text-align: center;
-
 }
 
 .contacts a {
@@ -319,6 +314,7 @@ a {
   align-items: center;
 }
 /* Нужно выровнить с другими*/
+
 .login-link,
 .registration-link {
   background-color: var(--basic-white);
@@ -350,14 +346,14 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   font-style: normal;
   font-weight: 400;
   box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
   margin: 0 auto 60px;
- }
+}
 
 .navigation-item a {
   color: var(--basic-white);
@@ -368,7 +364,6 @@ a {
 .navigation-item:hover,
 .navigation-item a:hover {
   background-color: var(--basic-dark-blue);
-
 }
 
 .navigation-item a:active {
@@ -394,7 +389,7 @@ a {
   padding: 0;
 }
 
-.preview-list{
+.preview-list {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 123px 123px 123px;
@@ -469,16 +464,22 @@ a {
 
 /* Slider */
 
+.slider-item:nth-child(2),
+.slider-control,
+.slider-dots {
+  display: none;
+}
+
+
 .main-slider {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
-
 }
 
 .slider-item {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -632,7 +633,7 @@ a {
   padding-top: 25px;
 }
 
-.popular-title h2{
+.popular-title h2 {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -671,7 +672,6 @@ a {
 
 .popular-brands {
   margin-top: 70px;
-
 }
 
 .brand-item {
@@ -773,7 +773,7 @@ a {
 
 /* About company */
 
-.about-company{
+.about-company {
   color: var(--basic-black);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -954,7 +954,6 @@ map {
 .communication a:active {
   color: var(--basic-red);
 }
-
 
 /* Catalog */
 /* Catalog subtitle */
@@ -1174,7 +1173,6 @@ map {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 400;
-
 }
 
 .article p {
