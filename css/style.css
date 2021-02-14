@@ -841,15 +841,13 @@ map {
 }
 
 .footer-top-wrapper {
-  padding-bottom: 54px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: min-content min-content;
 }
 
 .footer-logo {
-  padding-top: 21px;
-  padding-bottom: 26px;
+  height: 68px;
   width: 220px;
 
   background-color: var(--basic-red);
@@ -861,6 +859,7 @@ map {
 .footer-contacts {
   color: var(--basic-light-gray);
   grid-column: 1 / 2;
+  padding-bottom: 54px;
 }
 
 .footer-contacts a {
@@ -870,10 +869,17 @@ map {
 .footer-navigation {
   list-style: none;
   grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 36px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .footer-navigation a {
   color: var(--basic-light-blue);
+
 }
 
 .footer-navigation-item a:hover {
@@ -887,10 +893,17 @@ map {
 .product-groups-list {
   list-style: none;
   grid-column: 2 / 3;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 .product-groups-list a {
   color: var(--basic-gold);
+}
+
+.product-groups-item:first-child {
+  padding-left: 20px;
 }
 
 .product-groups-item a:hover {
@@ -1114,9 +1127,9 @@ map {
   font-family: 'PT Sans', 'Arial', sans-serif;
   list-style: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-size: normal;
-  line-height: 23px;
+  line-height: 19px;
 }
 
 /* Pages field */
