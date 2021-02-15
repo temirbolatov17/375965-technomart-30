@@ -40,17 +40,23 @@
       </div>
       <div class="mid-header container">
         <div class="title">
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         </div>
         <div class="contacts">
           <a href="tel:+78125550555">+7(812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="account-field">
-          <div class="profile">
-            <a class="profile-link" href="#">Профиль</a>
-            <a class="profile-name" href="#">Равшан Джамшутович</a>
-            <a class="profile-leave" href="#">Выход</a>
+        <div class="catalog-account-field">
+          <div class="account-item">
+            <p class="account-name">
+              <a class="user" href="#" aria-label="Перейти в личный кабинет" >
+                Равшан Джамшутович
+                <!-- <svg class="icon-userpic"></svg> -->
+              </a>
+              <a href="#">
+                <!-- <svg class="icon-logout"></svg>-->
+              </a>
+            </p>
           </div>
           <div class="account-details">
             <a class="my-orders" href="#">Мои заказы</a>
@@ -126,23 +132,23 @@
             <fieldset class="choice-brand">
               <legend>Производители</legend>
               <ul class="choice-brand-list">
-                <li>
+                <li class="filter-option">
                   <input type="checkbox" id="bosch" name="bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="checkbox" id="interskol" name="interskol">
                   <label for="interskol">Интерскол</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="checkbox" id="makita" name="makita" checked>
                   <label for="makita">Makita</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="checkbox" id="dewalt" name="dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="checkbox" id="hitachi" name="hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
@@ -151,11 +157,11 @@
             <fieldset class="choice-power">
               <legend>Питание</legend>
               <ul class="power-list">
-                <li>
+                <li class="filter-option">
                   <input type="radio" name="power" value="battery" id="battery-power" checked>
                   <label for="battery-power">Аккумуляторные</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input type="radio" name="power" value="cable" id="cable-power">
                   <label for="cable-power">Сетевые</label>
                 </li>
@@ -279,21 +285,21 @@
                 </div>
               </li>
             </ul>
-            <ul class="page-list">
-              <li class="page-item">
-                <a class="page-active">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link last-page" href="#">Следующая</a>
-              </li>
-            </ul>
           </div>
+          <ul class="page-list">
+            <li class="page-item">
+              <a class="page-active">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link last-page" href="#">Следующая</a>
+            </li>
+          </ul>
         </section>
       </div>
 
