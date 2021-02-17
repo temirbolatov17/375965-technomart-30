@@ -1181,12 +1181,6 @@ a {
 
 }
 
-.sort-title p {
-  margin: 0;
-  align-self: center;
-  padding-left: 20px;
-}
-
 .sort-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1202,6 +1196,10 @@ a {
 
 .sort-title p {
   color: var(--basic-black);
+  margin: 0;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .sort-title a {
@@ -1222,7 +1220,6 @@ a {
   text-decoration-style: dotted;
   text-decoration-color: var(--basic-red);
   opacity: 0.3;
-
 }
 
 .sort-item a:hover,
