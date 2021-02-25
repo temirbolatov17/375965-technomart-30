@@ -224,11 +224,19 @@ input.search::placeholder {
   line-height: 24px;
 }
 
-.user-search-field label:hover {
+input.search:hover + label {
   opacity: 1;
 }
 
-
+input.search:focus + label {
+  position: absolute;
+  background-image: url(../img/icon-search-focus.svg);
+  height: 17px;
+  width: 17px;
+  left: 17px;
+  top: 12px;
+  opacity: 1;
+}
 
 .search-form input:focus {
   background-color: var(--basic-white);
@@ -241,8 +249,6 @@ input.search::placeholder {
   color: rgba(var(--basic-white-rgb), 0.5);
   height: 100%;
 }
-
-
 
 .bookmarks-item {
   position: relative;
@@ -277,7 +283,7 @@ input.search::placeholder {
   display: block;
   align-items: center;
   padding-top: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   padding-left: 21px;
   text-align: center;
 }
@@ -299,7 +305,7 @@ input.search::placeholder {
   padding-left: 24px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 
   text-align: center;
 
@@ -479,14 +485,21 @@ input.search::placeholder {
   font-size: 21px;
   line-height: 21px;
   display: block;
+  position: relative;
   box-sizing: border-box;
-  height: 45px;
-  padding: 12px 28px 12px 18px;
+  text-align: center;
+  min-height: 45px;
+  width: 121px;
+  padding-top: 12px;
+  padding-left: 20px;
   margin-right: 10px;
 }
 
-.login-link svg {
+.login-link-icon {
   padding-right: 7px;
+  position: absolute;
+  left: 19px;
+  top: 14px;
 }
 
 .login-link:hover path,
@@ -910,6 +923,7 @@ input.search::placeholder {
   top: 122px;
   left: 24px;
   background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .next-slide {
@@ -918,6 +932,7 @@ input.search::placeholder {
   right: 20px;
   top: 121px;
   background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .slider-dots {
@@ -1009,6 +1024,31 @@ input.search::placeholder {
   position: relative;
 }
 
+.product-image {
+  object-fit: contain;
+  height: auto;
+}
+
+.img-9000 {
+  margin-top: 7px;
+  margin-left: 1px;
+}
+
+.img-3000 {
+  margin-right: 12px;
+  margin-top: 1px;
+}
+
+.img-6000 {
+  margin-top: 3px;
+  margin-right: 9px;
+}
+
+.img-2000 {
+  margin-top: 1px;
+  margin-right: 12px;
+}
+
 .brand-item:hover,
 .product-card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -1062,11 +1102,9 @@ input.search::placeholder {
   width: 141px;
   height: 38px;
   background-color: var(--basic-red);
-  background-image: linear-gradient(
-225deg
-,#fff 14px,transparent 14px),linear-gradient(
-315deg
-,#fff 14px,transparent 14px);
+  background-image:
+    linear-gradient(225deg,#fff 14px,transparent 14px),
+    linear-gradient(315deg,#fff 14px,transparent 14px);
   border-radius: 4px 0 0 4px;
 }
 
@@ -1220,8 +1258,8 @@ input.search::placeholder {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content min-content;
   list-style: none;
-  gap: 20px;
-
+  column-gap: 20px;
+  row-gap: 18px;
   padding: 0;
 }
 
@@ -1246,6 +1284,7 @@ input.search::placeholder {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  cursor: pointer;
 
   width: 220px;
   height: 145px;
@@ -1266,15 +1305,39 @@ input.search::placeholder {
   max-width: 100%;
 }
 
+.brand-item:nth-child(1) .brand-link {
+  margin-top: 6px;
+}
+
+.brand-item:nth-child(2) .brand-link {
+  margin-top: 1px;
+}
+
+.brand-item:nth-child(3) .brand-link {
+  margin-top: 2px;
+}
+
+.brand-item:nth-child(4) .brand-link {
+  margin-top: 4px;
+}
 
 .brand-item:nth-child(5) .brand-link {
-  margin-top: 4px;
+  margin-top: 8px;
   margin-left: 5px;
 }
 
+.brand-item:nth-child(6) .brand-link {
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
 .brand-item:nth-child(7) .brand-link {
-  margin-top: 3px;
+  margin-top: 7px;
   margin-left: 2px;
+}
+
+.brand-item:nth-child(8) .brand-link {
+  margin-top: 7px;
 }
 
 /* Services area */
@@ -1384,9 +1447,7 @@ input.search::placeholder {
 }
 
 .services-button {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 22px;
+  padding: 14px 0 18px 22px;
   width: 240px;
   text-align: left;
   min-height: 61px;
@@ -1396,35 +1457,31 @@ input.search::placeholder {
   font-size: 21px;
   line-height: 30px;
   box-sizing: border-box;
-  border: none;
+  border: 0;
   outline: 0;
 
-  background-color: var(--basic-blue);
+  cursor: pointer;
   color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
-
-.services-item:nth-child(2) .services-button {
-  margin-bottom: 1px;
-}
-
 
 .services-item:nth-child(2) .services-button,
 .services-item:last-child .services-button {
-  box-shadow: inset 0px 1px 0px var(--special-shadow-inset-color),
-   0px 1px 0px var(--special-shadow-color);
+  box-shadow:
+    inset 0px 1px 0px var(--special-shadow-inset-color),
+    0px 1px 0px var(--special-shadow-color);
 }
-
 
 .active {
   background-color: var(--basic-white);
   color: var(--basic-blue);
 }
 
-.services-button:hover {
+.services-button:hover:not(.active) {
   background-color: var(--basic-dark-blue);
 }
 
-.services-button:active {
+.services-button:active:not(.active) {
   color: var(--basic-blue);
   background-color: var(--basic-white);
 }
@@ -1453,13 +1510,13 @@ input.search::placeholder {
   padding: 0 10px;
   column-gap: 100px;
   margin-top: 70px;
+  margin-bottom: 66px;
 }
 
 .logistic-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .logistic-info h2 {
@@ -1484,12 +1541,12 @@ input.search::placeholder {
 }
 
 .company-list {
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   display: block;
+  margin: 0 0 6px 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 18px;
 }
 
 .company-item {
@@ -1503,20 +1560,16 @@ input.search::placeholder {
   content: "";
   position: absolute;
   left: 0px;
-  top: 12px;
+  top: 10px;
   width: 25px;
   border-bottom: 2px solid var(--basic-red);
 }
-
 
 .more-info-button {
   width: 220px;
   box-sizing: border-box;
   min-height: 38px;
-  margin-top: 4px;
-  margin-bottom: 68px;
-  padding-top: 15px;
-  padding-bottom: 9px;
+  padding-top: 11px;
 }
 
 .about-contacts {
@@ -1526,12 +1579,10 @@ input.search::placeholder {
   align-items: flex-start;
 }
 
-
-
 .button-write-us {
-  margin-bottom: 69px;
   width: 300px;
   min-height: 38px;
+  padding-bottom: 9px;
 }
 
 .about-contacts h2 {
@@ -1544,9 +1595,8 @@ input.search::placeholder {
 }
 
 .about-map-container {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
-
 
 .about-contacts p {
   margin-bottom: 32px;
@@ -1660,11 +1710,6 @@ input.search::placeholder {
   padding-right: 0;
 }
 
-/*
-.product-groups-item:first-child {
-  padding-left: 20px;
-}*/
-
 .product-groups-item a:hover {
   text-decoration: underline;
 }
@@ -1763,6 +1808,7 @@ input.search::placeholder {
 
 .product-list {
   margin-bottom: 48px;
+  margin-top: 0px;
 }
 
 .goods-filter-area {
@@ -1784,17 +1830,18 @@ input.search::placeholder {
   flex-wrap: wrap;
   column-gap: 0.7em;
   padding: 0;
-  margin: 17px 0 20px 0;
+  margin: 20px 0 20px 0;
 
   font-family: 'PT Sans', Arial, sans-serif;
   list-style: none;
+  line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
 .breadcrumbs-list li {
   position: relative;
-  margin-right: 40px;
+  margin-right: 28px;
 }
 
 .breadcrumbs-list li::after {
@@ -1803,8 +1850,8 @@ input.search::placeholder {
   background-image: url(../img/icon-right-small.svg);
   width: 8px;
   height: 12px;
-  top: 7px;
-  right: -22px;
+  top: 4px;
+  right: -25px;
 }
 
 .breadcrumbs-item:last-child {
@@ -1817,6 +1864,7 @@ input.search::placeholder {
 
 .breadcrumbs-item a {
   font-size: 13px;
+  line-height: 18px;
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -1851,14 +1899,16 @@ input.search::placeholder {
   background-color: var(--basic-beige-darknes);
   text-transform: uppercase;
   margin: 0;
+  min-height: 38px;
   border-radius: 2px;
+  margin-bottom: 28px;
 }
 
 .main-filter {
   display: grid;
   grid-template-columns: 220px;
   grid-template-rows: 38px min-content;
-  row-gap: 5px;
+  row-gap: 13px;
 }
 
 .main-filter fieldset {
@@ -1880,10 +1930,6 @@ input.search::placeholder {
 .main-filter ul {
   padding: 0;
 }
-
-
-
-
 
 /* Range */
 
@@ -2032,7 +2078,7 @@ input.search::placeholder {
 
 .sort-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 169px 71px;
   grid-template-rows: 38px;
   padding: 0;
   margin: 0;
@@ -2041,6 +2087,12 @@ input.search::placeholder {
 
 .sort-item {
   text-align: center;
+  padding-right: 15px;
+
+}
+
+.sort-item:first-child {
+  padding-right: 23px;
 }
 
 .arrows-area {
@@ -2048,18 +2100,18 @@ input.search::placeholder {
 }
 
 .increase-button {
-  padding-right: 21px;
+  padding-right: 18px;
 }
 
 .decrease-button {
-  padding-right: 14px;
+  padding-right: 16px;
 }
 
 .sort-title p {
   color: var(--basic-black);
   margin: 0;
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-left: 20px;
 }
 
