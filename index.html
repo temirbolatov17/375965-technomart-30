@@ -31,7 +31,7 @@
             <a class="bookmarks" href="#">Закладки: 0</a>
           </div>
           <div class="basket-item">
-            <a class="basket" href="#">Корзина: 0</a>
+            <a class="basket-null" href="#">Корзина: 0</a>
           </div>
           <div class="order-confirm-item">
               <a class="order-confirm" href="#">Оформить заказ</a>
@@ -127,13 +127,13 @@
               <img src="img/dreli.jpg" width="620" height="266" alt="Мужчина с дрелью bosch">
               <a class="button" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="slider-control" >
-              <button class="slider-button-back" type="button">Назад</button>
-              <button class="slider-button-next" type="button">Вперед</button>
+            <div class="slider-control">
+              <button class="slider-arrow previous-slide" type="button"></button>
+              <button class="slider-arrow next-slide" type="button"></button>
             </div>
             <div class="slider-dots">
-              <button class="dot-item" type="button">1</button>
-              <button class="dot-item" type="button">2</button>
+              <button class="slider-circle current" type="button"></button>
+              <button class="slider-circle" type="button"></button>
             </div>
           </section>
         </div>
@@ -157,28 +157,27 @@
               </a>
               <div class="product-container">
                 <img class="product-image" src="img/goods/bosch9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-                <div class="product-popup">
-                  <a class="buy-button" href="#">Купить</a>
-                  <a class="bookmark-button" href="#">В Закладки</a>
-                </div>
               </div>
               <span class="sale-price">32500 Р.</span>
               <div class="product-price price-bg">25500 Р.</div>
+              <div class="product-popup">
+                  <a class="buy-button" href="#">Купить</a>
+                  <a class="bookmark-button" href="#">В Закладки</a>
+              </div>
             </li>
-            <li class="product-card">
+            <li class="product-card new">
               <a class="product-name" href="blank.html">
                 <h3>Перфоратор BOSCH<br> BFG 3000</h3>
               </a>
-              <div class="new"></div>
               <div class="product-container">
                 <img class="product-image" src="img/goods/bosch3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-                <div class="product-popup">
-                  <a class="buy-button" href="#">Купить</a>
-                  <a class="bookmark-button" href="#">В Закладки</a>
-                </div>
               </div>
               <span class="sale-price">22500 Р.</span>
               <div class="product-price price-bg">15500 Р.</div>
+              <div class="product-popup">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="bookmark-button" href="#">В Закладки</a>
+              </div>
             </li>
             <li class="product-card">
               <a class="product-name" href="blank.html">
@@ -186,13 +185,13 @@
               </a>
               <div class="product-container">
                 <img class="product-image" src="img/goods/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="product-popup">
-                  <a class="buy-button" href="#">Купить</a>
-                  <a class="bookmark-button" href="#">В Закладки</a>
-                </div>
               </div>
               <span class="sale-price">30500 Р.</span>
               <div class="product-price price-bg">25500 Р.</div>
+              <div class="product-popup">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="bookmark-button" href="#">В Закладки</a>
+              </div>
             </li>
             <li class="product-card new">
               <a class="product-name" href="blank.html">
@@ -200,13 +199,13 @@
               </a>
               <div class="product-container">
                 <img class="product-image" src="img/goods/bosch2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-                <div class="product-popup">
-                <a class="buy-button" href="#">Купить</a>
-                <a class="bookmark-button" href="#">В Закладки</a>
-              </div>
               </div>
               <span class="sale-price">22500 Р.</span>
               <div class="product-price price-bg">12500 Р.</div>
+              <div class="product-popup">
+                <a class="buy-button" href="#">Купить</a>
+                <a class="bookmark-button" href="#">В Закладки</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -289,7 +288,6 @@
               <h3 class="services-slide-title">Доставка</h3>
               <p class="services-slide-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-              <img class="services-image-1" src="img/delivery.png" width="468" height="261" alt="delivery">
             </div><!--
             <div class=" services-slider gaurantee">
               <h3>Гарантия</h3>
@@ -389,7 +387,7 @@
         <div class="footer-bottom-wrapper container">
           <div class="copyright">
             <h2 class="visually-hidden">Техномарт</h2>
-            <p>© 2010–2019 Компания «Техномарт»<br>
+            <p>© 2010-2019 Компания «Техномарт»<br>
             Все права защищены</p>
           </div>
           <div class="socials">
@@ -428,7 +426,7 @@
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
             <p>
-              Разработано -<br>
+              Разработано &ndash;<br>
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
