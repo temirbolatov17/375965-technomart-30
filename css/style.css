@@ -2253,7 +2253,7 @@ input.search:focus + label {
   border: 1px solid #E5E5E5;
 }
 
-/* Pages field */
+/* Pagination area */
 
 .pagination-list {
   display: flex;
@@ -2299,11 +2299,11 @@ input.search:focus + label {
   border: 1px solid var(--basic-red);
 }
 
-.page-link:hover:not(.page-link-active) {
+.page-link:not(.page-link-active):hover {
   border-color: var(--basic-graylight);
 }
 
-.page-link:active {
+.pagination-item .page-link:active {
   border-color: var(--basic-red);
 }
 
