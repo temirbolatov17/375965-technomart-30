@@ -276,8 +276,8 @@ input.search:focus + label {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 20px;
 }
 
@@ -285,7 +285,7 @@ input.search:focus + label {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 21px;
   text-align: center;
@@ -295,8 +295,8 @@ input.search:focus + label {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 2px;
 }
 
@@ -350,6 +350,10 @@ input.search:focus + label {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+}
+
+.basket-null:hover::before {
+  opacity: 1;
 }
 
 .basket-null:active::before,
@@ -1660,7 +1664,7 @@ input.search:focus + label {
   grid-row: 1 / 2;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 37px;
+  margin-top: 38px;
   margin-left: auto;
   margin-bottom: 20px;
   padding: 0;
@@ -2326,7 +2330,7 @@ input.search:focus + label {
   font-size: 13px;
 
   margin: 0;
-  padding-bottom: 69px;
+  padding-bottom: 68px;
 }
 
 /* Modal Feedback */
@@ -2461,7 +2465,7 @@ input.search:focus + label {
 .modal-purchase {
   width: 620px;
   height: 282px;
-  display: none;
+ display: none;
 }
 
 .modal-purchase-content {
