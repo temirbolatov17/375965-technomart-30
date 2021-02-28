@@ -197,7 +197,8 @@ a {
   border: none;
   outline: none;
   width: 271px;
-  height: 42px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 42px;
   font: inherit;
 }
@@ -216,13 +217,14 @@ a {
   opacity: 0.3;
 }
 
-input.search::placeholder {
+.search::placeholder {
   color: var(--basic-white);
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+  opacity: 1;
 }
 
 input.search:hover + label {
@@ -350,22 +352,21 @@ input.search:focus + label {
   opacity: 0.3;
 }
 
-.basket-null:focus::before,
-.basket-null:hover::before {
-  opacity: 1;
-}
-
 .basket-null:active::before,
 .basket-full:active::before {
   opacity: 0.3;
 }
 
-.bookmarks:focus::before,
+.basket-null:hover::before {
+  opacity: 1;
+}
+
 .bookmarks:hover::before {
   opacity: 1;
 }
 
-.bookmarks:active::before {
+.bookmarks:active::before,
+.basket-null:active::before {
   opacity: 0.3;
 }
 
@@ -384,8 +385,7 @@ input.search:focus + label {
   color: rgba(var(--basic-white-rgb), 0.5);
 }
 
-.order-confirm:hover,
-.order-confirm:focus {
+.order-confirm:hover {
   background-color: var(--special-green);
 }
 
@@ -502,8 +502,7 @@ input.search:focus + label {
   top: 14px;
 }
 
-.login-link:hover path,
-.login-link:focus path {
+.login-link:hover path {
   fill: var(--basic-grey);
 }
 
@@ -586,9 +585,7 @@ input.search:focus + label {
   opacity: 0.3;
 }
 
-.exit-icon-link:focus path,
 .exit-icon-link:hover path,
-.profile-icon-link:focus path,
 .profile-icon-link:hover path {
   fill: var(--basic-grey);
 }
@@ -1662,7 +1659,7 @@ input.search:focus + label {
   grid-row: 1 / 2;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 38px;
+  margin-top: 37px;
   margin-left: auto;
   margin-bottom: 20px;
   padding: 0;
@@ -1897,6 +1894,7 @@ input.search:focus + label {
   grid-template-columns: 220px;
   grid-template-rows: 38px min-content;
   row-gap: 13px;
+  margin-bottom: 100px;
 }
 
 .main-filter fieldset {
@@ -2010,20 +2008,39 @@ input.search:focus + label {
   border-radius: 2px;
   background: var(--basic-beige-darknes);
   font-family: inherit;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 18px;
+
 }
+
+.min-price input[type='number'],
+.max-price input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.min-price input::-webkit-outer-spin-button,
+.min-price input::-webkit-inner-spin-button,
+.max-price input::-webkit-outer-spin-button,
+.max-price input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 
 /* Checkbox */
 
 .filter-option {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   margin-left: 34px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 15px;
 }
 
 .filter-radio {
   margin-top: 0px;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 
 .filter-option label {
@@ -2036,7 +2053,7 @@ input.search:focus + label {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -34px;
+  left: -36px;
   top: 0px;
   width: 23px;
   height: 23px;
@@ -2051,7 +2068,7 @@ input.search:focus + label {
   content: "";
   position: absolute;
   top: 0px;
-  left: -34px;
+  left: -36px;
   width: 27px;
   height: 23px;
 
@@ -2063,7 +2080,7 @@ input.search:focus + label {
 .choice-brand {
   padding-top: 3px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .choice-brand::after {
@@ -2073,7 +2090,7 @@ input.search:focus + label {
   height: 1px;
   background-color: var(--basic-black);
   opacity: 0.1;
-  bottom: -16px;
+  bottom: -13px;
 }
 
 .choice-brand-list {
@@ -2097,6 +2114,10 @@ input.search:focus + label {
 
 /* Radio */
 
+.choice-power {
+  margin-bottom: 6px;
+}
+
 .power-list {
   font-family: 'PT Sans', 'Arial', sans-serif;
   list-style: none;
@@ -2104,7 +2125,7 @@ input.search:focus + label {
   font-size: 15px;
   font-size: normal;
   line-height: 19px;
-  margin-top: 25px;
+  margin-top: 23px;
   margin-bottom: 0;
 }
 
@@ -2112,7 +2133,7 @@ input.search:focus + label {
   content: "";
   position: absolute;
   left: -36px;
-  top: -3px;
+  top: -2px;
   width: 19px;
   height: 19px;
   border: 3px solid var(--basic-graylight);
@@ -2122,7 +2143,7 @@ input.search:focus + label {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: -28px;
   width: 9px;
   height: 9px;
@@ -2232,8 +2253,9 @@ input.search:focus + label {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 59px;
+  margin-bottom: 49px;
   padding: 0;
   box-sizing: border-box;
 
@@ -2246,6 +2268,7 @@ input.search:focus + label {
 
 .pagination-item {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .page-link {
@@ -2260,7 +2283,6 @@ input.search:focus + label {
   color: var(--basic-black);
   border-radius: 2px;
   border: 1px solid var(--special-gray-border);
-
 }
 
 .next-page {
@@ -2323,18 +2345,26 @@ input.search:focus + label {
   box-shadow: 0px 4px 20px rgba(var(--basic-black-rgb), .15);
 }
 
+.modal-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
 .modal-feedback-form {
-  display: none;
-  top: 120px;
   width: 620px;
   height: 430px;
-  padding-top: 39px;
+  display: none;
 }
 
 .feedback-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
 .feedback-form p {
@@ -2347,6 +2377,7 @@ input.search:focus + label {
   margin-bottom: 13px;
   margin-top: 11px;
   padding-left: 12px;
+  padding-right: 12px;
   box-sizing: border-box;
 
   font-size: 13px;
@@ -2359,7 +2390,7 @@ input.search:focus + label {
 }
 
 .input-email-container {
-  padding-right: 60px;
+  padding-right: 80px;
 }
 
 .input-feedback-container {
@@ -2375,6 +2406,7 @@ input.search:focus + label {
   margin-top: 11px;
   resize: none;
   padding-left: 12px;
+  padding-right: 12px;
   padding-top: 7px;
   box-sizing: border-box;
 
@@ -2387,7 +2419,6 @@ input.search:focus + label {
   min-height: 112px;
   width: 100%;
   padding: 0;
-
   background-color: var(--special-gray-modal-bg);
 }
 
@@ -2396,7 +2427,7 @@ input.search:focus + label {
   min-height: 38px;
   padding: 0;
   border: none;
-  margin: 38px 80px;
+  margin: 38px 0;
 }
 
 /* Modal close */
@@ -2422,21 +2453,24 @@ input.search:focus + label {
   display: none;
   width: 943px;
   height: 449px;
-  top: 120px;
 }
 
 /* Catalog modal purchase */
 
 .modal-purchase {
-  top: 310px;
   width: 620px;
   height: 282px;
+  display: none;
+}
+
+.modal-purchase-content {
+  width: 620px;
+  height: 216px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 66px;
-  display: none;
 }
 
 .notification-area::before {
