@@ -1049,6 +1049,10 @@ input.search:focus + label {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.brand-item:active {
+  opacity: 0.5;
+}
+
 .product-popup {
   display: none;
 }
@@ -1445,7 +1449,6 @@ input.search:focus + label {
   padding: 14px 0 18px 22px;
   width: 240px;
   text-align: left;
-  min-height: 61px;
 
   font: inherit;
   font-weight: 700;
@@ -1470,6 +1473,7 @@ input.search:focus + label {
 .active {
   background-color: var(--basic-white);
   color: var(--basic-blue);
+  box-shadow: none;
 }
 
 .services-button:hover:not(.active) {
@@ -1479,6 +1483,7 @@ input.search:focus + label {
 .services-button:active:not(.active) {
   color: var(--basic-blue);
   background-color: var(--basic-white);
+  box-shadow: none;
 }
 
 .services-slider {
@@ -2460,6 +2465,10 @@ input.search:focus + label {
   display: none;
   width: 943px;
   height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 /* Catalog modal purchase */
