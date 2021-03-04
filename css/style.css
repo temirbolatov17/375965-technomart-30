@@ -2084,8 +2084,6 @@ input.search:focus + label {
   background-image: url(../img/checkbox-on.svg);
 }
 
-/* Brands filter*/
-
 .choice-brand {
   padding-top: 3px;
   position: relative;
