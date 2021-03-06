@@ -161,7 +161,7 @@ a {
 
 .top-header-area {
   display: grid;
-  grid-template-columns: 220px 270px 150px 150px 150px;
+  grid-template-columns: 220px 270px 1fr;
   grid-template-rows: 42px;
 
   height: 42px;
@@ -246,6 +246,12 @@ input.search:focus + label {
   color: var(--basic-black);
 }
 
+.header-order-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .bookmarks-item:active,
 .basket-item:active {
   background-color: var(--special-black-active);
@@ -261,33 +267,28 @@ input.search:focus + label {
   position: relative;
 }
 
-.order-confirm-item {
-  display: block;
-  width: 150px;
-}
-
 .basket-item-full {
   position: relative;
-  margin-left: auto;
-  width: 136px;
 }
 
 .bookmarks {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 38px;
+  padding-left: 43px;
 }
 
 .basket-null {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 21px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 27px;
+  padding-left: 35px;
   text-align: center;
 }
 
@@ -295,9 +296,10 @@ input.search:focus + label {
   color: var(--basic-white);
   display: block;
   align-items: center;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 2px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 19px;
 }
 
 .basket-full {
@@ -305,10 +307,10 @@ input.search:focus + label {
 
   color: var(--basic-white);
   display: block;
-  padding-left: 24px;
-  padding-right: 10px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-left: 35px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 8px;
 
   text-align: center;
 }
@@ -333,7 +335,7 @@ input.search:focus + label {
   width: 15px;
   height: 15px;
   top: 13px;
-  left: 26px;
+  left: 12px;
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -350,10 +352,6 @@ input.search:focus + label {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-}
-
-.basket-null:hover::before {
-  opacity: 1;
 }
 
 .basket-null:hover::before {
@@ -381,7 +379,7 @@ input.search:focus + label {
 
 .order-confirm-item {
   background-color: var(--basic-green);
-  height: 100%;
+
 }
 
 .basket-full:active {
@@ -507,7 +505,8 @@ input.search:focus + label {
   top: 14px;
 }
 
-.login-link:hover path {
+.login-link:hover path,
+.login-link:focus path {
   fill: var(--basic-grey);
 }
 
@@ -953,6 +952,11 @@ input.search:focus + label {
   cursor: pointer;
 }
 
+.slider-arrow:focus,
+.slider-circle:focus {
+  outline: solid;
+}
+
 .current {
   background-color: var(--basic-red);
   border: 2px solid var(--basic-white);
@@ -1054,18 +1058,33 @@ input.search:focus + label {
 }
 
 .product-popup {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 .product-card:hover img {
-  display: none;
+  visibility: hidden;
 }
 
 .product-card:hover .product-popup {
   display: flex;
   flex-direction: column;
-
+  visibility: visible;
   position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: 38px;
+}
+
+.product-card:focus-within img {
+  visibility: hidden;
+}
+
+.product-card:focus-within .product-popup {
+  visibility: visible;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
   top: 38px;
@@ -1476,7 +1495,8 @@ input.search:focus + label {
   box-shadow: none;
 }
 
-.services-button:hover:not(.active) {
+.services-button:hover:not(.active),
+.services-button:focus:not(.active) {
   background-color: var(--basic-dark-blue);
 }
 
@@ -2059,6 +2079,11 @@ input.search:focus + label {
   user-select: none;
 }
 
+.filter-option:focus-within label::before,
+.filter-option:focus-within label::after {
+  outline: solid;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -2070,7 +2095,7 @@ input.search:focus + label {
 }
 
 .filter-input-checkbox:checked + label::before {
-  display: none;
+  visibility: hidden;
 }
 
 .filter-input-checkbox:checked + label::after {
