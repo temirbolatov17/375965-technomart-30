@@ -555,6 +555,8 @@ input.search:focus + label {
   padding-top: 12px;
   padding-bottom: 9px;
   margin-top: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .account-item p {
@@ -1767,6 +1769,7 @@ input.search:focus + label {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin-top: 13px;
   margin-left: 19px;
 }
 
@@ -1803,7 +1806,7 @@ input.search:focus + label {
 
 .communication p {
   justify-self: end;
-  padding-right: 12px;
+  padding-right: 13px;
   margin-top: 15px;
 }
 
@@ -2400,7 +2403,7 @@ input.search:focus + label {
   font-size: 13px;
 
   margin: 0;
-  padding-bottom: 68px;
+  padding-bottom: 69px;
 }
 
 /* Modal Feedback */
