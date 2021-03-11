@@ -291,8 +291,8 @@
               <h3 class="services-slide-title">Доставка</h3>
               <p class="services-slide-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-            </div><!--
-            <div class=" services-slider gaurantee">
+            </div>
+            <div class="services-slider gaurantee">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии.
                 Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
@@ -303,7 +303,7 @@
               <p>Залезть в долговую яму стало проще! Крдитные консультанты придут вам на помощь.</p>
               <img src="img/credit.png" width="465" height="285" alt="credit">
               <a class="button" href="blank.html">Отправить заявку</a>
-            </div>-->
+            </div>
           </div>
         </div>
       </section>
@@ -442,11 +442,11 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="input-name-container">
             <label for="input-name">Ваше имя:</label><br>
-            <input type="text" id="input-name" placeholder="Имя Фамилия">
+            <input class="input-name" type="text" name='name' id="input-name" placeholder="Имя Фамилия">
           </p>
           <p class="input-email-container">
             <label for="input-email">Ваш e-mail:</label><br>
-            <input type="text" id="input-email" placeholder="email@example.com">
+            <input class="input-email" type="text" name="email" id="input-email" placeholder="email@example.com">
           </p>
           <p class="input-feedback-container">
             <label class="feedback-area-label" for="feedback-area">Текст письма:</label><br>
@@ -466,5 +466,7 @@
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
