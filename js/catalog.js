@@ -1,7 +1,8 @@
 const buyButtons = document.querySelectorAll('.buy-button');
 const purchasePopup = document.querySelector('.modal-purchase');
 const purchaseClose = document.querySelector('.modal-close');
-
+const purchaseOrderBtn = document.querySelector('.modal-order-button');
+const purchaseContinueBtn = document.querySelector('.modal-continue-button');
 
 buyButtons.forEach(buyButtons => buyButtons.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -9,6 +10,16 @@ buyButtons.forEach(buyButtons => buyButtons.addEventListener('click', function(e
 }));
 
 purchaseClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  purchasePopup.classList.remove('modal-purchase-show');
+});
+
+purchaseOrderBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  purchasePopup.classList.remove('modal-purchase-show');
+});
+
+purchaseContinueBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
   purchasePopup.classList.remove('modal-purchase-show');
 });
