@@ -32,7 +32,7 @@ buttonWriteUs.addEventListener('click', function (evt) {
     feedbackName.value = storage;
     feedbackText.focus();
   } else {
-    feedbackText.focus();
+    feedbackName.focus();
   }
 })
 
