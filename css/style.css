@@ -667,16 +667,17 @@ input.search:focus + label {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 7px;
-  padding-left: 27px;
+  width: 940px;
+
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-right: 23px;
+  padding-left: 23px;
   box-sizing: border-box;
 
   list-style: none;
   font-style: normal;
-  width: 940px;
   font-weight: 400;
-  margin-top: 40px;
-  margin-bottom: 60px;
 }
 
 .navigation-item a {
@@ -685,8 +686,12 @@ input.search:focus + label {
   display: block;
   padding-top: 17px;
   padding-bottom: 19px;
-  padding-right: 32px;
-  padding-left: 25px;
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.navigation-item:last-child a {
+  padding-left: 27px;
 }
 
 .navigation-item:hover,
