@@ -425,6 +425,7 @@ input.search:focus + label {
   color: var(--basic-red);
 
   margin: 0 0 0 30px;
+  width: 197px;
 }
 
 .title p {
@@ -437,6 +438,7 @@ input.search:focus + label {
   color: var(--basic-red);
 
   margin: 0 0 0 30px;
+  width: 197px;
 }
 
 .contacts {
@@ -457,7 +459,7 @@ input.search:focus + label {
   width: 270px;
   height: 45px;
   padding: 4px 18px 5px 71px;
-  margin: 3px 0 0 3px;
+  margin: 3px 0 0 2px;
   position: relative;
 
   font-size: 21px;
@@ -825,7 +827,7 @@ input.search:focus + label {
 }
 
 .preview-item h3 {
-  font-family: 'Cuprum', 'Arial' sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -1536,15 +1538,9 @@ input.search:focus + label {
   box-shadow: none;
 }
 
-.services-button:hover:not(.active),
-.services-button:focus:not(.active) {
+.services-button:focus:not(.active),
+.services-button:hover:not(.active) {
   background-color: var(--basic-dark-blue);
-}
-
-.services-button:active:not(.active) {
-  color: var(--basic-blue);
-  background-color: var(--basic-white);
-  box-shadow: none;
 }
 
 .services-slider {
@@ -1724,10 +1720,12 @@ input.search:focus + label {
   margin-left: 3px;
 }
 
-.footer-contacts p {
+.footer-contacts address {
   margin-left: 3px;
   margin-top: 9px;
   margin-bottom: 0;
+
+  font-style: normal;
 }
 
 .footer-navigation {
@@ -1806,6 +1804,10 @@ input.search:focus + label {
 
 .copyright {
   width: 360px;
+}
+
+.copyright p {
+  margin-left: 2px;
 }
 
 .social-list {
@@ -1933,7 +1935,7 @@ input.search:focus + label {
   color: var(--basic-black);
 }
 
-.subtitle h2 {
+.subtitle h1 {
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 29px;
@@ -2195,7 +2197,6 @@ input.search:focus + label {
   list-style: none;
   text-transform: uppercase;
   font-size: 15px;
-  font-size: normal;
   line-height: 19px;
 }
 
@@ -2295,7 +2296,6 @@ input.search:focus + label {
 .sort-item {
   text-align: center;
   padding-right: 15px;
-
 }
 
 .sort-item:first-child {
@@ -2656,9 +2656,8 @@ input.search:focus + label {
   align-items: center;
 }
 
-.modal-button-bg button {
-  padding: 0;
-  min-height: 38px;
+.modal-button-bg .button {
+  padding: 11px 0 9px 0;
   border: none;
   margin-right: 10px;
 }

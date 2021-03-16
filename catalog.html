@@ -4,15 +4,17 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon152.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon/icon32.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon152.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon/icon32.svg" type="image/svg+xml">
   </head>
 
   <body class="page-catalog">
+
     <header class="main-header">
       <div class="top-header">
         <div class="top-header-area container">
@@ -42,7 +44,7 @@
       </div>
       <div class="mid-header container">
         <div class="title">
-          <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+          <p>Интернет-магазин строительных материалов &nbsp; и инструментов для ремонта</p>
         </div>
         <div class="contacts contacts-catalog">
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -73,7 +75,6 @@
           </div>
         </div>
       </div>
-
       <nav class="bottom-header container">
         <ul class="site-navigation">
           <li class="navigation-item">
@@ -102,8 +103,7 @@
     </header>
 
     <main class="main-catalog">
-
-      <h1 class="visually-hidden">Каталог</h1>
+      <h2 class="visually-hidden">Каталог</h2>
 
       <div class="breadcrumbs container">
         <ul class="breadcrumbs-list">
@@ -128,7 +128,7 @@
       </div>
 
       <div class="subtitle container">
-        <h2>Перфораторы</h2>
+        <h1>Перфораторы</h1>
       </div>
 
       <div class="main-catalog-grid container">
@@ -138,14 +138,12 @@
             <div class="sort-title">
               <p>Фильтр:</p>
             </div>
-
             <fieldset class="choice-price">
               <legend>Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 73%;
-                                            margin-left: 10%"></div>
+                    <div class="bar" style="width: 73%; margin-left: 10%"></div>
                   </div>
                   <div class="toggle toggle-min" tabindex="0" style="left: 9%;"></div>
                   <div class="toggle toggle-max" tabindex="0" style="left: 73%;"></div>
@@ -259,7 +257,6 @@
                   <a class="bookmark-button" href="#">В Закладки</a>
                 </div>
               </li>
-
               <li class="product-card new">
                 <a class="product-name" href="blank.html">
                   <h3>Перфоратор BOSCH<br> BFG 6000</h3>
@@ -274,7 +271,6 @@
                   <a class="bookmark-button" href="#">В Закладки</a>
                 </div>
               </li>
-
               <li class="product-card new">
                 <a class="product-name" href="blank.html">
                   <h3>Перфоратор BOSCH<br> BFG 3000</h3>
@@ -398,7 +394,7 @@
             </a>
           </div>
           <div class="footer-contacts">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <ul class="footer-navigation">
@@ -418,7 +414,6 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-
           <ul class="product-groups-list">
             <li class="product-groups-item">
               <a href="#">Материалы</a>
@@ -487,6 +482,7 @@
         </div>
       </section>
     </footer>
+
     <section class="modal modal-purchase">
       <div class="modal-container">
         <h2 class="visually-hidden">Товар добален в корзину</h2>
@@ -495,13 +491,14 @@
             <p>Товар добавлен в корзину!</p>
           </div>
           <div class="modal-button-bg">
-            <button class="button modal-order-button" type="submit">Оформить заказ</button>
-            <button class="button modal-continue-button" type="button">Продолжить покупки</button>
+            <a class="button modal-order-button" type="submit">Оформить заказ</a>
+            <a class="button modal-continue-button" type="button">Продолжить покупки</a>
           </div>
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </div>
       </div>
     </section>
+
     <script src="js/catalog.min.js"></script>
   </body>
 </html>
